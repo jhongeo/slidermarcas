@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body style="padding:0px; margin:0px; background-color:#fff;font-family:arial,helvetica,sans-serif,verdana,'Open Sans'">
+
+    <!-- #region Jssor Slider Begin -->
+    <!-- Generator: Jssor Slider Maker -->
+    <!-- Source: https://www.jssor.com -->
+    <script src="js/jssor.slider-26.3.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $Idle: 0,
+              $SlideDuration: 5000,
+              $SlideEasing: $Jease$.$Linear,
+              $PauseOnHover: 4,
+              $SlideWidth: 180,
+              $Cols: 14,
+              $Align: 0
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+			var jssor_1_slider = new $JssorSlider$("jssor_2", jssor_1_options);
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 3000;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 40);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+        /* jssor slider loading skin spin css */
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+		.if-image {
+		filter: grayscale(100%);
+		-webkit-filter: grayscale(100%);
+		transition:filter 0.4s;
+		-webkit-transition:-webkit-filter 1s;
+		width:140px;
+
+		}
+
+		.if-image:hover {
+		filter: grayscale(0);
+		-webkit-filter: grayscale(0);
+		width:140px;
+
+		}
+
+		.ContenedorIMG{
+		width:200px;
+		padding: 0;
+
+		height:180px;
+		border-style:solid;
+		border-color:#fff;
+		background:#fff;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		}
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:-10px;width:5000px;height:100px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+        </div>
+         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:5000px;height:100px;overflow:hidden;">
+
+            <div class="ContenedorIMG">
+				<a class="if-image" target="_blank" href="https://www.7-eleven.com.mx/">
+					<img class="if-image" align="center" src="img/Logos/001.png" />
+				</a>
+            </div>
+			<div class="ContenedorIMG">
+				<a class="if-image" href="#">
+					<img class="if-image" align="center" src="img/Logos/003.png" />
+				</a>
+            </div>
+			<div class="ContenedorIMG">
+				<a class="if-image" target="_blank" href="http://www.asur.com.mx/">
+					<img class="if-image" align="center" src="img/Logos/004.png" />
+				</a>
+            </div>
+			<div class="ContenedorIMG">
+				<a class="if-image" target="_blank" href="http://www.gandhi.com.mx/">
+					<img class="if-image" align="center" src="img/Logos/009.png" />
+				</a>
+            </div>
+			<div class="ContenedorIMG">
+				<a class="if-image" target="_blank" href="http://www.heb.com.mx/">
+					<img class="if-image" align="center" src="img/Logos/013.png" />
+				</a>
+            </div>
+			<div class="ContenedorIMG">
+				<a class="if-image" target="_blank" href="http://www.hudsongroup.com/">
+					<img class="if-image" align="center" src="img/Logos/014.png" />
+				</a>
+            </div>
+			<div class="ContenedorIMG">
+				<a class="if-image" target="_blank" href="https://www.lacomer.com.mx/lacomer/doHome.action?key=Lomas-Anahuac&succId=14&succFmt=100&pago=false">
+					<img class="if-image" align="center" src="img/Logos/015.png" />
+				</a>
+            </div>
+			<div class="ContenedorIMG">
+				<a class="if-image" target="_blank" href="https://www.liverpool.com.mx/tienda/home.jsp">
+					<img class="if-image" align="center" src="img/Logos/016.png" />
+				</a>
+            </div>
+			<div class="ContenedorIMG">
+				<a class="if-image" target="_blank" href="http://www.oxxo.com/">
+					<img class="if-image" align="center" src="img/Logos/022.png" />
+				</a>
+            </div>
+			<div class="ContenedorIMG">
+				<a class="if-image" target="_blank" href="https://www.elpalaciodehierro.com/">
+					<img class="if-image" align="center" src="img/Logos/023.png" />
+				</a>
+            </div>
+			<div class="ContenedorIMG">
+				<a class="if-image" target="_blank" href="http://www.sanborns.com.mx/Paginas/Inicio.aspx">
+					<img class="if-image" align="center" src="img/Logos/027.png" />
+				</a>
+            </div>
+			<div class="ContenedorIMG">
+				<a class="if-image" target="_blank" href="https://www.soriana.com/">
+					<img class="if-image" align="center" src="img/Logos/028.png" />
+				</a>
+            </div>
+			<div class="ContenedorIMG">
+				<a class="if-image" target="_blank" href="https://www.toks.com.mx/">
+					<img class="if-image" align="center" src="img/Logos/032.png" />
+				</a>
+            </div>
+			<div class="ContenedorIMG">
+				<a class="if-image" target="_blank" href="https://vips.com.mx/">
+					<img class="if-image" align="center" src="img/Logos/036.png" />
+				</a>
+            </div>
+			<div class="ContenedorIMG">
+				<a class="if-image" target="_blank" href="https://www.walmart.com.mx/">
+					<img class="if-image" align="center" src="img/Logos/038.png" />
+				</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">jssor_1_slider_init();</script>
+    <!-- #endregion Jssor Slider End -->
+</body>
+</html>
